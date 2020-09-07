@@ -1,5 +1,185 @@
-#wrap{
+body {
+    background-color: #ccc;
+    color: #000000;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #854242;
+}
+
+footer {
+    min-height: 42px;
+    text-align: center;
+    border-radius: 6px;
+    display: flex;
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#container {
+    background-color: #fff;
+    max-width: 960px;
+    padding: 10px 40px;
     margin: 0 auto;
-    width: 900px;
-    background-color: burlywood;
-    color: red;
+}
+
+section footer {
+
+    background-color: #854242;
+}
+
+#headercontent {
+    position: relative;
+}
+
+#mainheader {
+    border-bottom: #854242 solid 2px;
+    padding-bottom: 8px;
+}
+
+#mainheader h1,
+#mainheader h2 {
+    text-align: center;
+}
+
+#mainfooter {
+    background-color: #999999;
+    margin-top: 12px;
+}
+
+#mainmenu {
+    color: #666666;
+}
+
+#mainmenu a {
+    color: #666666;
+    text-decoration: none;
+}
+
+#mainmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mainmenu ul li {
+    display: inline;
+    padding: 0;
+    margin-right: 12px;
+}
+
+#search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 33px;
+    line-height: 33px;
+}
+
+main {
+    display: flex;
+}
+
+#box1,
+#box2 {
+    flex: 50%;
+}
+
+#box1 {
+    padding-right: 6px;
+}
+
+#box2 {
+    padding-left: 6px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+    #search {
+        display: block;
+        position: initial;
+        width: 100%;
+        background-color: #854242;
+        margin-top: 6px;
+    }
+
+    #search form {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 8px;
+    }
+
+    #search input[type=text] {
+        flex: 70%;
+    }
+
+    #mainheader {
+        border-width: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        padding: 10px 20px;
+    }
+
+    #search {
+        position: fixed;
+        width: 100%;
+        background-color: #854242;
+    }
+
+    #search form {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 8px;
+    }
+
+    #search input[type=text] {
+        flex: 70%;
+    }
+
+    main {
+        display: block;
+    }
+
+    #box1,
+    #box2 {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    #mainmenu {
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 6px;
+    }
+
+    #mainheader {
+        border-width: 0;
+    }
+}
